@@ -20,11 +20,11 @@ connection.connect((err) => {
     if (err) throw err;
     console.log(`connected as id ${connection.threadId}`);
     mainPage();
-    getEmployee();
-    getEmployeeMan();
 })
 
 function mainPage() {
+    getEmployee();
+    getEmployeeMan();
     console.log("Welcome to the company directory!")
     inquirer.prompt([
         {
